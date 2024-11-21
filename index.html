@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Vortex Artwork</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image -->
+  <div class="background">
+    <img id="background-img" src="https://media-hosting.imagekit.io//9d780c6fa4024f20/IMG_8087.jpg?Expires=1732313437&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=EkGEc4dp0gfQ1DsmjjhHNhvduNOhDl7hgJ5zu6rdxeyGk02Z-kB~uVatvnC-LIN-BsupVqHOiNxdHf3rgn4wTlZzyeM6h8bQWzbEtm3UTTuWdqY5O-hB-enXBhESfwUitxC3V3PshalMASlcNnp8qesbLY1vHL5g9I7gKifN-a7uwDwoNGuaeDuvpY7~a8s7VuVRjqjYRobWAefIiV5GJ9ITLKFoVuPeuLE~m6EM1m~7qgnAg329bi4cw6ujfy7XxeR1P6~kE9Y6~omM4e5JFOBJxS8vjCXay~7fjfUowT0mV9EzRDH30lIap9UKFh776IboZAHlyynb9UUXlAQk9Q__" alt="Background">
+  </div>
+
+  <!-- View Box Layer -->
+  <svg id="viewbox-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+    <image href="https://gd-hbimg.huaban.com/33b663bb2aaf6696ed02af16127259767521b4a952d379-u0mK6Y_fw1200webp"
+           x="0" y="0" width="1200" height="1200" transform="rotate(90, 600, 600)" />
+  </svg>
+
+  <!-- Centered Text -->
+  <div class="centered-text" id="interactive-text">
+    Through the mist, time ripples endlessly.
+  </div>
+
+  <!-- Design System Label -->
+  <div class="design-system-label">
+    <div>Design</div>
+    <div>System</div>
+  </div>
+
+  <!-- Popup Panel -->
+  <div class="design-system-popup" id="designSystemPopup">
+    <div class="popup-content">
+      <!-- Typography Section -->
+      <h3>Typography</h3>
+      <div class="typography-section">
+        <div class="typography-item">
+          <p class="font-label">Primary Font: Kapakana</p>
+          <p class="font-sample kapakana-font">Through the mist, time ripples endlessly.</p>
+        </div>
+        <div class="typography-item">
+          <p class="font-label">Secondary Font: Sans-serif</p>
+          <p class="font-sample sans-serif-font">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        </div>
+      </div>
+
+      <!-- Color Palette Section -->
+      <h3>Color Palette</h3>
+      <div class="color-palette-section">
+        <div class="color-item">
+          <div class="color-box" style="background-color: #2E3336;"></div>
+          <p class="color-code">#2E3336</p>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background-color: #363C3C;"></div>
+          <p class="color-code">#363C3C</p>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background-color: #515151;"></div>
+          <p class="color-code">#515151</p>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background-color: #6B6A68;"></div>
+          <p class="color-code">#6B6A68</p>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background-color: #CABFAD;"></div>
+          <p class="color-code">#CABFAD</p>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background-color: #FFFFFF; border: 1px solid #000;"></div>
+          <p class="color-code">#FFFFFF</p>
+        </div>
+      </div>
+
+      <!-- Layout Section -->
+      <h3>Layout</h3>
+      <div class="layout-section">
+        <div class="layout-item">
+          <p class="layout-label">Background Image:</p>
+          <p class="layout-description">The background image is an artistic time vortex that serves as the visual foundation of the artwork. The image has been visually processed to enhance the thematic atmosphere.</p>
+        </div>
+        <div class="layout-item">
+          <p class="layout-label">View Box:</p>
+          <p class="layout-description">A torn old newspaper effect overlays the background, forming a foreground. The torn portion reveals the background image, creating layers and visual impact.</p>
+        </div>
+        <div class="layout-item">
+          <p class="layout-label">Centered Text:</p>
+          <p class="layout-description">A poetic phrase displayed in the center of the screen, reinforcing the theme of the artwork. The text stands out clearly against the background.</p>
+        </div>
+        <div class="layout-item">
+          <p class="layout-label">Design System Label:</p>
+          <p class="layout-description">Located in the top-right corner, the label invites users to click and view the Design System information.</p>
+        </div>
+        <div class="layout-item">
+          <p class="layout-label">Popup Panel:</p>
+          <p class="layout-description">Clicking the Design System label triggers a sliding white popup panel from the right, containing detailed design information.</p>
+        </div>
+      </div>
+
+      <!-- Interaction Section -->
+      <h3>Interaction</h3>
+      <div class="layout-section">
+        <div class="layout-item">
+          <p class="layout-label">Centered Text Interaction:</p>
+          <p class="layout-description">When the centered text is clicked, the screen shakes violently, simulating the distortion of time and space. A lightning effect briefly appears, enhancing the visual dynamic.</p>
+        </div>
+        <div class="layout-item">
+          <p class="layout-label">Design System Interaction:</p>
+          <p class="layout-description">Clicking the Design System label slides out the popup from the right. Clicking outside the popup closes it.</p>
+        </div>
+        <div class="layout-item">
+          <p class="layout-label">Popup Scroll Support:</p>
+          <p class="layout-description">If the popup content exceeds the visible area, users can scroll vertically to view all information, improving the user experience.</p>
+        </div>
+        <div class="layout-item">
+          <p class="layout-label">Loading and Dynamic Effects:</p>
+          <p class="layout-description">The background and view box automatically adjust to the screen size upon loading. Smooth animations accompany user interactions, enhancing the immersive experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
