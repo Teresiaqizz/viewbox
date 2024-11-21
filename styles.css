@@ -1,0 +1,197 @@
+/* Import custom font */
+@font-face {
+    font-family: 'Kapakana';
+    src: url('./front/Kapakana-Regular.ttf') format('truetype');
+  }
+  
+  /* General body style */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    position: relative;
+    filter: grayscale(30%);
+    transform-origin: center center;
+    transition: transform 0.1s ease-in-out; /* Shake animation */
+  }
+  
+  /* Background image */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+  
+  /* View Box */
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  /* Centered text */
+  .centered-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kapakana', sans-serif;
+    font-size: 5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  /* Design System Label */
+  .design-system-label {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  /* Popup panel */
+  .design-system-popup {
+    position: absolute;
+    top: 0;
+    right: -50%; /* Initially hidden */
+    width: 50%;
+    height: 100%;
+    background: white;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.5s ease; /* Slide-in animation */
+    z-index: 20;
+    overflow-y: auto; /* Enable scrolling for content */
+    box-sizing: border-box;
+  }
+  
+  /* Popup content */
+  .popup-content {
+    padding: 20px 40px; /* Padding to keep content visually aligned */
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Typography section */
+  .typography-section h3,
+  .color-palette-section h3,
+  .layout-section h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: black;
+    text-align: left;
+  }
+  
+  /* Typography items */
+  .typography-item {
+    margin-bottom: 20px;
+  }
+  
+  .font-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .font-sample {
+    margin: 5px 0;
+  }
+  
+  .kapakana-font {
+    font-family: 'Kapakana', sans-serif;
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .sans-serif-font {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  /* Color palette */
+  .color-palette-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow colors to wrap to next row */
+    gap: 20px; /* Spacing between colors */
+  }
+  
+  .color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .color-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .color-code {
+    font-size: 0.9rem;
+    color: black;
+  }
+  
+  /* Layout section */
+  .layout-section {
+    margin-top: 10px;
+  }
+  
+  .layout-item {
+    margin-bottom: 20px;
+  }
+  
+  .layout-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .layout-description {
+    font-size: 1rem;
+    color: grey;
+    font-family: sans-serif;
+    line-height: 1.4;
+  }
+  
+  /* Custom scrollbar for popup content */
+  .popup-content::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+  }
+  
+  .popup-content::-webkit-scrollbar-thumb {
+    background: #aaa; /* Scrollbar color */
+    border-radius: 4px;
+  }
+  
+  .popup-content::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Scrollbar hover color */
+  }
+  
